@@ -1,20 +1,20 @@
 # S/4HANA Cloud Extensions - Sample app for external orders
 A sample web application as extension to an SAP S/4HANA Cloud system to list products (material master) for external users. and allows to order them (creation of a sales order in S/4) as external user.
 
-Note, this sample app is based and explained in detail in the [1RW guide](https://rapid.sap.com/bp/#/browse/search?q=1RW). The following README only shows a basic overview.  
+Note, this sample app is based and explained in detail in the [1RW guide](https://rapid.sap.com/bp/#/browse/scopeitems/1RW). The following README only shows a basic overview.  
 
 
 Prerequisites
 -------------
 1. Install JDK7 or 8, Maven and Git  
-2. Prepare your S/4HANA Cloud system according to the [1RW guide](https://rapid.sap.com/bp/#/browse/search?q=1RW)
+2. Prepare your S/4HANA Cloud system according to the [1RW guide](https://rapid.sap.com/bp/#/browse/scopeitems/1RW)
 
 
 Get the sample app
 ------------------
 
 ```
-git clone https://github.wdf.sap.corp/bestpractices/s4-sidebyside-extorderapp-neo.git  
+git clone https://github.com/SAP/cloud-s4-sample-ext.git  
 ```
 
 
