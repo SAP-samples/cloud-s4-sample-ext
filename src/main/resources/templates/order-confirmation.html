@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Order confirmation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+	<h1>Thank you!</h1>	
+	<p>We've received your order.</p>
+	<p>Your order number: <i th:text="${param.createdSalesOrderId[0]}" /></p>
+	<p>Booking confirmation: <i th:text="${param.createdOtcRecordId[0]}" /></p>	
+</body>
+</html>

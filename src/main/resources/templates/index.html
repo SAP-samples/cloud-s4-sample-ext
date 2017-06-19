@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>ACME Product Order App</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+	<h1>ACME's Products</h1>
+	
+	<p th:text="'We found ' + ${count} + ' available products!'" />
+		
+	<ul id="products">
+		<li th:each="p: ${products}">
+			<h3 th:text="${p.product}" />
+			<a th:href="@{/order(productId=${p.product})}">order</a>
+		</li>
+	</ul>	
+		
+</body>
+</html>
