@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Order your product</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+	<h1 th:text="'Product ' + ${product.product}"></h1>
+
+	<h2>Description</h2>
+	<p th:text="${product.getDescription()}" />
+
+
+	<h2>Order</h2>
+	<form th:action="@{/order}" th:object="${otcRecord}" method="post">				
+			
+		<h3>Personal data</h3>
+		<label for="firstName">First name</label>
+		<input type="text" id="firstName" th:field="*{firstName}" /><br />
+		
+		<label for="lastName">Last name</label>
+		<input type="text" id="lastName" th:field="*{lastName}" /><br />
+
+		<label for="shippingAddress">Shipping Address</label>
+		<input type="text" id="shippingAddress" th:field="*{shippingAddress}" /><br />
+			
+		<label for="phoneNumber">Phone Number</label>
+		<input type="text" id="phoneNumber" th:field="*{phoneNumber}" /><br />
+		
+		<label for="bankAccount">Bank Account</label>
+		<input type="text" id="bankAccount" th:field="*{bankAccount}" /><br />		
+		
+		<br />
+		<input type="hidden" name="productId" th:value="${product.product}" />	
+		<input type="submit" value="order" onclick="this.form.submit(); this.disabled=true; this.value='please wait...'; return false;" />
+		
+	</form>
+	
+</body>
+</html>
