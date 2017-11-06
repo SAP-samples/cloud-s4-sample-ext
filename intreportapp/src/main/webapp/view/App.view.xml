@@ -1,0 +1,25 @@
+<mvc:View controllerName="com.acme.controller.App" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns="sap.m">
+
+	<Panel id="mainPanel" showNavButton="true" navButtonTap="goBack">
+
+		<headerToolbar>
+			<Toolbar width="100%" id="__toolbar0">
+				<content>
+					<Button id="homeBtn" icon="sap-icon://home"/>
+					<Button id="backBtn" icon="sap-icon://nav-back" press="goBack" visible="false" />
+					<ToolbarSpacer/>
+					<Label text="Sales Order Geo Report"  design="Bold"/>
+					<ToolbarSpacer/>
+					<Label text="" id="userLbl"/>
+				</content>
+			</Toolbar>
+		</headerToolbar>
+
+		<content>
+
+		</content>
+	</Panel>
+</mvc:View>

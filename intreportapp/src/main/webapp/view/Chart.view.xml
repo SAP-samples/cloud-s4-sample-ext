@@ -1,0 +1,26 @@
+<mvc:View
+	controllerName="com.acme.controller.Chart"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns="sap.m">
+	<viz:VizFrame id="idVizFrame" vizProperties="{ title: {text : 'Total net amount sold per month', visible : true}}" uiConfig="{applicationSet:'fiori'}" height="400px" width="100%" vizType="column">
+		<viz:dataset>
+			<viz.data:FlattenedDataset data="{path: '/'}">
+				<viz.data:dimensions>
+					<viz.data:DimensionDefinition name="Month" value="{month}" />
+				</viz.data:dimensions>
+				<viz.data:measures>
+					<viz.data:MeasureDefinition id="amount" name="Total Net Amount (EUR)" value="{totalAmount}" />
+					<viz.data:MeasureDefinition name="MonthNo" value="{monthNo}" />
+				</viz.data:measures>
+			</viz.data:FlattenedDataset>
+		</viz:dataset>
+		<viz:feeds>
+			<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Total Net Amount (EUR)" />
+			<viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Month" />
+		</viz:feeds>
+	</viz:VizFrame>
+</mvc:View>

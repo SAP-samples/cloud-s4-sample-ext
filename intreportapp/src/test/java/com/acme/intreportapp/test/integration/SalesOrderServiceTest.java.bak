@@ -1,0 +1,54 @@
+package com.acme.intreportapp.test.integration;
+
+import java.net.URI;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import com.sap.cloud.sdk.cloudplatform.connectivity.ProxyConfiguration;
+import com.sap.cloud.sdk.s4hana.serialization.SapClient;
+import com.sap.cloud.sdk.testutil.ErpSystem;
+import com.sap.cloud.sdk.testutil.MockUtil;
+
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@AutoConfigureMockMvc
+public class SalesOrderServiceTest {
+	private static final MockUtil mockUtil = new MockUtil();
+	private static final Logger logger = LoggerFactory.getLogger(SalesOrderServiceTest.class);
+	
+	@Autowired
+	private MockMvc mvc;
+	
+	@BeforeClass
+	public static void beforeClass() {
+		try {
+			mockUtil.mockErpDestination("ErpQueryEndpoint", new ErpSystem(new URI("https://my300096-api.s4hana.ondemand.com"), "S4C", new SapClient("100")), 
+					null, null, null, new ProxyConfiguration(new URI("http://proxy.wdf.sap.corp:8080")), null, null, null, null, null, null);
+		} catch (final Exception e) {
+            logger.error("Could not mock ERP destination for test.", e);
+		}
+	}
+	
+	@Test
+    public void test() throws Exception
+    {
+    	mvc.perform(MockMvcRequestBuilders.get("/api/salesOrders"))
+    		.andExpect(status().isOk())
+    		.andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+			.andExpect(jsonPath("$.results", hasSize(greaterThan(0))));
+    }
+}

@@ -1,0 +1,21 @@
+This program references the following third party open source or other free download components.
+The third party licensors of these components may provide additional license rights,
+terms and conditions and/or require certain notices as described below.
+
+Spring Framework (http://projects.spring.io/spring-framework)
+Licensed under Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
+
+Thymeleaf (http://www.thymeleaf.org/)
+Licensed under Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
+
+SLF4J (http://www.slf4j.org/)
+Licensed under MIT - http://www.slf4j.org/license.html
+
+GSON (https://github.com/google/gson)
+Licensed under Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
+
+SAP S/4HANA Cloud SDK (https://www.sap.com/developer/topics/s4hana-cloud-sdk.product-details.html)
+License details see - https://www.sap.com/developer/topics/s4hana-cloud-sdk.faq.html
+
+Google Maps API (https://developers.google.com/maps)
+Licensing at https://developers.google.com/maps/pricing-and-plans/

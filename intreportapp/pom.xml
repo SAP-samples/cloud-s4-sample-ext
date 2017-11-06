@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.sap.cloud.s4-sample-ext</groupId>
+	<artifactId>intreportapp</artifactId>
+	<version>0.0.1</version>
+
+	<packaging>war</packaging>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.4.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<main.basedir>${basedir}/../..</main.basedir>		
+		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.sap.cloud.s4hana</groupId>
+				<artifactId>sdk-bom</artifactId>
+				<version>1.0.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>1.1.0.Final</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- Compile -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>	
+		</dependency>	
+		<!-- Provided (for embedded war support) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>		
+		<!-- Test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- S/4HANA Cloud SDK -->
+		<dependency>
+			<groupId>com.sap.cloud.s4hana</groupId>
+			<artifactId>s4hana-all</artifactId>
+		</dependency>		
+	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>neo</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-legacy</artifactId>
+					<version>1.1.0.RELEASE</version>	
+				</dependency>	
+				<dependency>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>				
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-thymeleaf</artifactId>
+					<exclusions>
+						<!-- The assembled war must not include any SLF4J related JARs
+							see https://help.hana.ondemand.com/help/frameset.htm?e6e8ccd3bb571014b6afdc54744eef4d.html -->
+						<exclusion>
+							<groupId>org.springframework.boot</groupId>
+							<artifactId>spring-boot-starter-tomcat</artifactId>
+						</exclusion>
+						<exclusion>
+							<artifactId>logback-classic</artifactId>
+							<groupId>ch.qos.logback</groupId>
+						</exclusion>
+					</exclusions>				
+				</dependency>
+				<dependency>
+					<groupId>com.sap.cloud.s4hana.cloudplatform</groupId>
+					<artifactId>scp-neo</artifactId>
+				</dependency>			
+			</dependencies>
+		</profile>		
+		<profile>
+			<id>local</id>
+			<dependencies>
+				<dependency>
+					<groupId>com.sap.cloud.s4hana.cloudplatform</groupId>
+					<artifactId>scp-cf</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

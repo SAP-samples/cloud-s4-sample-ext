@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<title>ACME Internal Reporting App</title>
+
+	<script id='sap-ui-bootstrap'
+		src='https://sapui5.hana.ondemand.com/resources/sap-ui-core.js'
+		data-sap-ui-theme='sap_belize'
+		data-sap-ui-libs='sap.m'
+		data-sap-ui-compatVersion='edge'
+		data-sap-ui-preload='async'>
+	</script>
+
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+
+		var user = /*[[${session.userName}]]*/ 'User Name';
+
+		jQuery.sap.registerModulePath('com.acme', './');
+		sap.ui.getCore().attachInit(function () {
+
+			var oAppView = sap.ui.xmlview({
+				id: "appView",
+				viewName: "com.acme.view.App"
+			}).placeAt("content");
+
+			oAppView.getController().init({
+				"s4HomeHref": /*[[${s4HomeHref}]]*/ "http://localhost:8080",
+				"user": /*[[${user}]]*/ "JON_DOE"
+			});
+
+		});
+
+		/*]]>*/
+	</script>
+
+</head>
+<body class="sapUiBody">
+	<div id="content"></div>
+	<script th:src="@{https://maps.googleapis.com/maps/api/js(key=${gMapsKey})}"></script>
+</body>
+</html>

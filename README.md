@@ -1,64 +1,35 @@
-# S/4HANA Cloud extensions - Product ordering sample app  
-This sample web application showcases an extension to an SAP S/4HANA Cloud system. It lists products (from the material master) for external users and allows to order them (i.e. a sales order is created in S/4HANA Cloud).
+# S/4HANA Cloud extensions - Sample apps
+ 
+The sample applications in this repository showcase various side-by-side extension scenarios to an SAP S/4HANA (Cloud) system. 
+Side-by-side applications are standalone web-based applications, running on the SAP Cloud Platform. Find an overview of [S/4HANA extensions here](https://www.sap.com/documents/2015/07/2ad59b27-347c-0010-82c7-eda71af511fa.html).
 
-> **NOTE:** This sample app is based on and explained in detail in the [1RW set-up instructions guide](https://rapid.sap.com/bp/#/browse/scopeitems/1RW). There, you will find more details on the end to end steps of the ordering scenario example, e.g.: 
-> * Creation of a custom business object in SAP S/4HANA Cloud 
-> * Connection setup of the SAP S/4HANA Cloud system and SAP Cloud Platform (via a communication arrangement)
-> * Adaption and deployment of the sample app
-
-> The following README only shows a basic overview.  
+Note: All samples require an S/4HANA (Cloud) system. Detailed instructions about the scenarios, underlying business process and set-up of the S/4HANA system can be found in the [1RW set-up instructions guide](https://rapid.sap.com/bp/#/browse/scopeitems/1RW) on how to prepare your S/4HANA Cloud system according to the scenario. 
+Since most of the samples also show a combination of S/4HANA in-app extensions several roles are required on the S/4HANA system. 
 
 
-Requirements
--------------
-1. We assume that you have access to an SAP S/4HANA Cloud system and an SAP Cloud Platform account
-2. Install [JDK7 or 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html), [Maven](http://maven.apache.org/download.cgi) and [Git](https://git-scm.com/downloads).  
-3. Prepare your S/4HANA Cloud system according to the [1RW set-up instructions guide](https://rapid.sap.com/bp/#/browse/scopeitems/1RW).
-**Note:** to access the guide you need to have [an account for SAP Service Marketplace](https://websmp103.sap-ag.de/~sapidp/012002523100007691892016E/)
 
-Download the sample app
-------------------
+## External Order Scenario
+This application shows how to reach external users and allow them to list products and place sales orders. 
 
-```
-git clone https://github.com/SAP/cloud-s4-sample-ext.git
-```
+- It is solely based on open source components, not using/requiring SAP proprietary technology. 
+- It is tightly coupled, and uses a technical user for integration with the S/4HANA system
+- It requires no additional persistency but uses an S/4HANA Custom Business Object to store additional data.
 
+[>> extorderapp](extorderapp)
 
-Connect it to your S/4HANA Cloud system
----------------------------------------
-Adapt [src/main/resources/application.properties](src/main/resources/application.properties) and adjust the connection parameters according to your SAP S/4HANA Cloud system. 
+ 
 
+## Internal Geographical Sales Report Scenario
+This applications show cases a reporting extension for internal users. It shows a bar graph of sales orders (created with the extorderapp) and shows their origin on a geopraphical map.
 
-```      
-# Base URL of the S/4HANA Cloud System
-s4cld.api_host=https://myXXXXXX-api.s4hana.ondemand.com
-    
-# API User (to be maintained in the Communication System in S/4HANA Cloud)
-s4cld.api_user=extorderapp_api_user
-    
-# API Password 
-s4cld.api_pass=QGRlcl9tYXRoaWFz
-    
-# OData service of the Custom Business Object, created in S/4HANA Cloud to store one-time order data  
-s4cld.onetimecustomerrecord_servicepath=/sap/opu/odata/sap/YY1_CUSTOMERRECORD_CDS
-s4cld.onetimecustomerrecord_resource=YY1_CUSTOMERRECORD
-```
+- It is using SAP Fiori to provide the same UI technology than S/4HANA.
+- It is using the SAP S/4HANA Cloud SDK for easier service consumption and integration with S/4HANA 
+- It shows how to set-up a shared identity provider between S/4HANA and the sample app running  the SAP Cloud Platform to allow single sign-on. 
+
+[>> intreportapp](intreportapp)
 
 
-Build it
---------
 
-```
-mvn package
-```
-
-
-Deploy to SAP Cloud Platform
-----------------------------
-1. Login to your SAP Cloud Platform cockpit (trial available https://cloudplatform.sap.com).
-2. Goto "Java Applications".
-3. Select the freshly built `extorderapp-0.0.1-SNAPSHOT.war` which was created by `the mvn` package command in folder `target`.
-4. Choose `Java Web Tomcat 7` (runtime `JRE7`). 
 
 
 Limitations / Disclaimer
@@ -66,14 +37,12 @@ Limitations / Disclaimer
 Note: This sample code is primarily for illustration purposes and is not intended for productive usage. It solely shows basic interaction with an S/4HANA Cloud system. Topics like authentication, error handling, transactional correctness, security, caching, tests were omitted on purpose for the sake of simplicity. For detailed information on development on the SAP Cloud Platform, please consult https://cloudplatform.sap.com/developers.html  
 
 
-Known Issues
-------------
-This sample application reads data from the SAP S/4HANA Cloud backend system and hence requires appropriate data maintained for a sell from stock process. Further details can be found also in guide [Sell from stock BD9](https://rapid.sap.com/bp/#/browse/scopeitems/BD9).
-
 
 How to obtain support
 ---------------------
 File a message in the [SAP Support Launchpad](https://launchpad.support.sap.com/#/incident/create) under component `CA-GTF-FND`
+
+
 
 
 ### Copyright and License
