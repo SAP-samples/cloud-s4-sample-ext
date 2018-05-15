@@ -36,7 +36,7 @@ This applications show cases a reporting extension for internal users. It shows 
 
 Limitations / Disclaimer
 ------------------------
-Note: Sample extension scenarios are designed to help you get an overall understanding of various extensibility concepts/patterns. SAP doesn’t recommend to use these samples for any productive usage. They show basic interaction with an S/4HANA Cloud system. Topics like authentication, error handling, transactional correctness, security, caching, tests were omitted on purpose for the sake of simplicity. For detailed information on development on the SAP Cloud Platform, please consult https://cloudplatform.sap.com/developers.html
+Note: Sample extension scenarios are designed to help you get an overall understanding of various extensibility concepts/patterns. SAP  recommends not to use these samples for any productive usage. They show basic interaction with an S/4HANA Cloud system. Topics like authentication, error handling, transactional correctness, security, caching, tests were omitted on purpose for the sake of simplicity. For detailed information on development on the SAP Cloud Platform, please consult https://cloudplatform.sap.com/developers.html
 
 
 
