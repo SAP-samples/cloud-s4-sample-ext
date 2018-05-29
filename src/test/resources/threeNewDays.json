@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2018-03-19",
+    "taskTime": {
+      "first": {
+        "startTime": "09:00",
+        "endTime": "",
+        "taskType": "ADMI",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "startTime": "",
+        "endTime": "17:00",
+        "taskType": "ADMI",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "breakTime": {
+      "duration": 60,
+      "startTime": "12:00",
+      "endTime": "",
+      "taskType": "MISC",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "travelTime": {
+      "first": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "user": "",
+    "totalTravelTime": 120,
+    "abbr": "ADMI"
+  },
+  {
+    "date": "2018-03-20",
+    "taskTime": {
+      "first": {
+        "startTime": "09:00",
+        "endTime": "",
+        "taskType": "TRAI",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "startTime": "",
+        "endTime": "17:00",
+        "taskType": "TRAI",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "breakTime": {
+      "duration": 60,
+      "startTime": "12:00",
+      "endTime": "",
+      "taskType": "MISC",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "travelTime": {
+      "first": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "user": "",
+    "totalTravelTime": 120,
+    "abbr": "TRAI"
+  },
+  {
+    "date": "2018-03-21",
+    "taskTime": {
+      "first": {
+        "startTime": "08:00",
+        "endTime": "",
+        "taskType": "ADMI",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "startTime": "",
+        "endTime": "18:00",
+        "taskType": "ADMI",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "breakTime": {
+      "duration": 60,
+      "startTime": "12:00",
+      "endTime": "",
+      "taskType": "MISC",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "travelTime": {
+      "first": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "user": "",
+    "totalTravelTime": 120,
+    "abbr": "ADMI"
+  }
+]

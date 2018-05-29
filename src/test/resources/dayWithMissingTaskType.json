@@ -1,0 +1,48 @@
+{
+  "date": "2018-05-01",
+  "taskTime": {
+    "first": {
+      "startTime": "09:00",
+      "endTime": "",
+      "taskType": "DFLT",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "second": {
+      "startTime": "",
+      "endTime": "17:00",
+      "taskType": "DFLT",
+      "companyCode": "",
+      "recordNumber": ""
+    }
+  },
+  "breakTime": {
+    "taskType": "MISC",
+    "duration": 60,
+    "startTime": "12:00",
+    "endTime": "",
+    "companyCode": "",
+    "recordNumber": ""
+  },
+  "travelTime": {
+    "first": {
+      "taskType": "TRAV",
+      "duration": 0,
+      "startTime": "",
+      "endTime": "",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "second": {
+      "taskType": "TRAV",
+      "duration": 0,
+      "startTime": "",
+      "endTime": "",
+      "companyCode": "",
+      "recordNumber": ""
+    }
+  },
+  "user": "",
+  "totalTravelTime": 120,
+  "abbr": "TRAI"
+}

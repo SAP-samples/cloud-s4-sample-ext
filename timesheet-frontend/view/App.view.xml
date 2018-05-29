@@ -1,0 +1,113 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:unified="sap.ui.unified" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+	controllerName="sap.ui.demo.wt.controller.App" displayBlock="true">
+	<App>
+		<Page showHeader="true" title="Timesheet Application" showFooter="true" showNavButton="false">
+			<content>
+				<VBox class="sapUiSmallMargin">
+					<Panel>
+						<Label text="Start Date &amp; End Date" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+						<DateRangeSelection enabled="true" visible="true" width="250px" displayFormat="MMM dd, yyyy" change="handlerDateRangeSelection" id="dRange"
+							navigate="onNavigate"/>
+					</Panel>
+				</VBox>
+				<VBox class="sapUiSmallMargin">
+					<Table width="auto" noDataText="No data" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+						items="{ path: '/days' }" id="daysTable" keyboardMode="Edit" showUnread="true" showNoData="false" backgroundDesign="Solid"
+						selectionChange="onSelectionChange">
+						<columns>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="Date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="Task Type" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="Start Time" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="End Time" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="Break Start" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="Break Duration(m)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+							<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+								<header>
+									<Text text="Travel Duration(m)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+								</header>
+								<footer/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem id="columnList" highlight="None">
+								<cells>
+									<Input value="{path: 'date', formatter: 'myFormatter.colorFormatter'}" visible="true" width="auto" editable="false"/>
+									<ComboBox items="{path: '/taskTypes'}" selectedKey="{abbr}" id="cmbBox" editable="{path: '/readOnly/setAll'}" change="onTaskChange">
+										<items>
+											<core:Item text="{fullName}" key="{abbr}"/>
+										</items>
+									</ComboBox>
+									<TimePicker value="{path: 'taskTime/first/startTime'}" valueFormat="HH:mm" displayFormat="HH:mm" enabled="true" visible="true" width="auto"
+										editable="{path: '/readOnly/setAll'}" change="onInputChange" required="true" id="stTime" valueStateText="Start Time greater than End Time"/>
+									<TimePicker value="{path: 'taskTime/second/endTime'}" valueFormat="HH:mm" displayFormat="HH:mm" enabled="true" visible="true" width="auto"
+										editable="{path: '/readOnly/setAll'}" change="onInputChange" required="true" id="endTime" valueStateText="End Time lower than Start Time"/>
+									<TimePicker value="{path: 'breakTime/startTime'}" valueFormat="HH:mm" displayFormat="HH:mm" enabled="true" visible="true" width="auto"
+										editable="{path: '/readOnly/setAll'}" change="onInputChange" required="true" id="brkStart"/>
+									<Input value="{path: 'breakTime/duration', type: 'sap.ui.model.type.Integer', constraints: { search: '^[0-9]*$', minimum: 30 }}"
+										enabled="true" visible="true" width="auto" fieldWidth="auto" editable="{path: '/readOnly/setAll'}" change="onInputChange"
+										validationError="handleValidationWarning" placeholder="min. 30" required="true" id="brkDur" valueStateText="Minimum value 30"
+										submit="onInputSubmit"/>
+									<Input value="{path: 'totalTravelTime', type: 'sap.ui.model.type.Integer', constraints: { search: '^[0-9]*$', minimum: 60 }}" enabled="true"
+										visible="true" width="auto" editable="{path: '/readOnly/setAll'}" change="onInputChange" validationError="handleValidationWarning"
+										placeholder="min. 60" id="trvDur" required="true" valueStateText="Minimum value 60"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</VBox>
+			</content>
+			<footer>
+				<Bar design="Auto">
+					<contentRight>
+						<Button text="Copy" type="Default" iconFirst="true" width="auto" enabled="{path: '/buttonsEnabled/copy'}"
+							visible="{path: '/buttonsVisible/copy'}" iconDensityAware="false" press="onCopy" icon="sap-icon://copy"/>
+						<Button text="Paste" iconFirst="true" width="auto" enabled="{path: '/buttonsEnabled/paste'}" visible="{path: '/buttonsVisible/paste'}"
+							iconDensityAware="false" press="onPaste" icon="sap-icon://paste"/>
+						<Button text="Clear" type="Default" iconFirst="true" width="auto" enabled="{path: '/buttonsEnabled/clear'}"
+							visible="{path: '/buttonsVisible/clear'}" iconDensityAware="false" press="onClear" icon="sap-icon://delete"/>
+						<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="{path: '/buttonsVisible/cancel'}"
+							iconDensityAware="false" press="onCancel" icon="sap-icon://cancel"/>
+						<Button text="Edit" iconFirst="true" width="auto" enabled="true" visible="{path: '/buttonsVisible/edit'}" activeIcon="sap-icon://edit"
+							press="onEdit" icon="sap-icon://edit"/>
+						<Button text="Save" type="Default" iconFirst="true" width="auto" enabled="{path: '/buttonsEnabled/save'}"
+							visible="{path: '/buttonsVisible/save'}" iconDensityAware="false" press="onSave" icon="sap-icon://save"/>
+					</contentRight>
+				</Bar>
+			</footer>
+			<headerContent>
+				<Button width="auto" id="logOutButton" icon="sap-icon://log" press="_handleLogout"/>
+				<Button text="{/currentUser}" width="auto" id="userButton" icon="sap-icon://account"/>
+			</headerContent>
+		</Page>
+	</App>
+</mvc:View>

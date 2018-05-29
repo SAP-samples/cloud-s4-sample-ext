@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2018-03-20",
+    "taskTime": {
+      "first": {
+        "startTime": "",
+        "endTime": "12:00",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002625"
+      },
+      "second": {
+        "startTime": "13:00",
+        "endTime": "",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002627"
+      }
+    },
+    "breakTime": {
+      "duration": 0,
+      "startTime": "",
+      "endTime": "13:00",
+      "taskType": "MISC",
+      "companyCode": "1010",
+      "recordNumber": "000000002626"
+    },
+    "travelTime": {
+      "first": {
+        "duration": 60,
+        "startTime": "06:00",
+        "endTime": "07:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002624"
+      },
+      "second": {
+        "duration": 60,
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002628"
+      }
+    },
+    "user": "ADMINISTRATOR",
+    "totalTravelTime": 0,
+    "abbr": "DFLT"
+  },
+  {
+    "date": "2018-03-21",
+    "taskTime": {
+      "first": {
+        "startTime": "07:00",
+        "endTime": "",
+        "taskType": "ADMI",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "startTime": "",
+        "endTime": "17:00",
+        "taskType": "ADMI",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "breakTime": {
+      "duration": 60,
+      "startTime": "12:00",
+      "endTime": "",
+      "taskType": "MISC",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "travelTime": {
+      "first": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "user": "",
+    "totalTravelTime": 120,
+    "abbr": "ADMI"
+  }
+]

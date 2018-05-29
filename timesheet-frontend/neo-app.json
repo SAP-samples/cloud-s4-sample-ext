@@ -1,0 +1,35 @@
+{
+	"authenticationMethod": "saml",
+	"welcomeFile": "index.html",
+	"logoutPage": "logout.html",
+	"sendWelcomeFileRedirect": true,
+
+	"routes": [{
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"version": "1.48.6",
+			"preferLocal": true,
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"version": "1.48.6",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/rest",
+		"target": {
+			"type": "destination",
+			"name": "timebackend",
+			"entryPath": "/"
+		},
+		"description": "Timesheet"
+	}]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2018-03-26",
+    "taskTime": {
+      "first": {
+        "startTime": "",
+        "endTime": "12:00",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002640"
+      },
+      "second": {
+        "startTime": "13:00",
+        "endTime": "",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002642"
+      }
+    },
+    "breakTime": {
+      "duration": 0,
+      "startTime": "",
+      "endTime": "13:00",
+      "taskType": "MISC",
+      "companyCode": "1010",
+      "recordNumber": "000000002641"
+    },
+    "travelTime": {
+      "first": {
+        "duration": 60,
+        "startTime": "06:00",
+        "endTime": "07:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002639"
+      },
+      "second": {
+        "duration": 60,
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002643"
+      }
+    },
+    "user": "ADMINISTRATOR",
+    "totalTravelTime": 0,
+    "abbr": "DFLT"
+  },
+  {
+    "date": "2018-03-27",
+    "taskTime": {
+      "first": {
+        "startTime": "09:00",
+        "endTime": "",
+        "taskType": "TRAI",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "startTime": "",
+        "endTime": "18:00",
+        "taskType": "TRAI",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "breakTime": {
+      "duration": 60,
+      "startTime": "12:00",
+      "endTime": "",
+      "taskType": "MISC",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "travelTime": {
+      "first": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      },
+      "second": {
+        "duration": 0,
+        "startTime": "",
+        "endTime": "",
+        "taskType": "TRAV",
+        "companyCode": "",
+        "recordNumber": ""
+      }
+    },
+    "user": "",
+    "totalTravelTime": 120,
+    "abbr": "TRAI"
+  },
+  {
+    "date": "2018-03-28",
+    "taskTime": {
+      "first": {
+        "startTime": "07:00",
+        "endTime": "13:00",
+        "taskType": "ADMI",
+        "companyCode": "1010",
+        "recordNumber": "000000002645"
+      },
+      "second": {
+        "startTime": "14:00",
+        "endTime": "19:00",
+        "taskType": "ADMI",
+        "companyCode": "1010",
+        "recordNumber": "000000002647"
+      }
+    },
+    "breakTime": {
+      "duration": 60,
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "taskType": "MISC",
+      "companyCode": "1010",
+      "recordNumber": "000000002646"
+    },
+    "travelTime": {
+      "first": {
+        "duration": 60,
+        "startTime": "07:00",
+        "endTime": "08:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002644"
+      },
+      "second": {
+        "duration": 60,
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002648"
+      }
+    },
+    "user": "ADMINISTRATOR",
+    "totalTravelTime": 120,
+    "abbr": "ADMI"
+  }
+]

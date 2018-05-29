@@ -1,0 +1,48 @@
+{
+  "date": "2018-03-12",
+  "taskTime": {
+    "first": {
+      "startTime": "09:00",
+      "endTime": "",
+      "taskType": "ADMI",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "second": {
+      "startTime": "",
+      "endTime": "13:00",
+      "taskType": "ADMI",
+      "companyCode": "",
+      "recordNumber": ""
+    }
+  },
+  "breakTime": {
+    "duration": 20,
+    "taskType": "MISC",
+    "startTime": "12:00",
+    "endTime": "",
+    "companyCode": "",
+    "recordNumber": ""
+  },
+  "travelTime": {
+    "first": {
+      "duration": 0,
+      "taskType": "TRAV",
+      "startTime": "",
+      "endTime": "",
+      "companyCode": "",
+      "recordNumber": ""
+    },
+    "second": {
+      "duration": 0,
+      "taskType": "TRAV",
+      "startTime": "",
+      "endTime": "",
+      "companyCode": "",
+      "recordNumber": ""
+    }
+  },
+  "user": "",
+  "totalTravelTime": 60,
+  "abbr": "ADMI"
+}

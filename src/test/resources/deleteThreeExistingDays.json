@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2018-02-07",
+    "taskTime": {
+      "first": {
+        "startTime": "",
+        "endTime": "13:00",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002028"
+      },
+      "second": {
+        "startTime": "14:00",
+        "endTime": "",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002030"
+      }
+    },
+    "breakTime": {
+      "duration": 0,
+      "startTime": "",
+      "endTime": "14:00",
+      "taskType": "MISC",
+      "companyCode": "1010",
+      "recordNumber": "000000002029"
+    },
+    "travelTime": {
+      "first": {
+        "duration": 30,
+        "startTime": "07:30",
+        "endTime": "08:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002027"
+      },
+      "second": {
+        "duration": 30,
+        "startTime": "18:00",
+        "endTime": "18:30",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002031"
+      }
+    },
+    "user": "ADMINISTRATOR",
+    "totalTravelTime": 0,
+    "abbr": "DFLT"
+  },
+  {
+    "date": "2018-02-08",
+    "taskTime": {
+      "first": {
+        "startTime": "",
+        "endTime": "13:00",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002033"
+      },
+      "second": {
+        "startTime": "14:00",
+        "endTime": "",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002035"
+      }
+    },
+    "breakTime": {
+      "duration": 0,
+      "startTime": "",
+      "endTime": "14:00",
+      "taskType": "MISC",
+      "companyCode": "1010",
+      "recordNumber": "000000002034"
+    },
+    "travelTime": {
+      "first": {
+        "duration": 30,
+        "startTime": "07:30",
+        "endTime": "08:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002032"
+      },
+      "second": {
+        "duration": 30,
+        "startTime": "18:00",
+        "endTime": "18:30",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002036"
+      }
+    },
+    "user": "ADMINISTRATOR",
+    "totalTravelTime": 0,
+    "abbr": "DFLT"
+  },
+  {
+    "date": "2018-02-09",
+    "taskTime": {
+      "first": {
+        "startTime": "",
+        "endTime": "13:00",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002038"
+      },
+      "second": {
+        "startTime": "14:00",
+        "endTime": "",
+        "taskType": "DFLT",
+        "companyCode": "1010",
+        "recordNumber": "000000002040"
+      }
+    },
+    "breakTime": {
+      "duration": 0,
+      "startTime": "",
+      "endTime": "14:00",
+      "taskType": "MISC",
+      "companyCode": "1010",
+      "recordNumber": "000000002039"
+    },
+    "travelTime": {
+      "first": {
+        "duration": 30,
+        "startTime": "07:30",
+        "endTime": "08:00",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002037"
+      },
+      "second": {
+        "duration": 30,
+        "startTime": "18:00",
+        "endTime": "18:30",
+        "taskType": "TRAV",
+        "companyCode": "1010",
+        "recordNumber": "000000002041"
+      }
+    },
+    "user": "ADMINISTRATOR",
+    "totalTravelTime": 0,
+    "abbr": "DFLT"
+  }
+]
