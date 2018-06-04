@@ -1,35 +1,25 @@
-# SAP S/4HANA Cloud extensions - Sample apps
+# SAP S/4HANA Cloud extensions - Sample scenarios
 
-The sample applications in this repository showcase various side-by-side extension scenarios to an SAP S/4HANA Cloud system. **Please check out the branches of the repository for the diverse sample apps.**
-Side-by-side applications are standalone web-based applications, running on the SAP Cloud Platform. Find an overview of [SAP S/4HANA extensions here](https://www.sap.com/documents/2015/07/2ad59b27-347c-0010-82c7-eda71af511fa.html).
+The sample scenarios/applications in this repository showcase various (side-by-side) extension scenarios to an SAP S/4HANA Cloud system. **Please check out the branches of the repository for the diverse sample apps.**
+Side-by-side applications are standalone web-based applications, running on the SAP Cloud Platform. Find an overview and more info on [SAP Extensibility Explorer for SAP S/4HANA Cloud](https://www.sap.com/extends4).
 
-Note: All samples require an SAP S/4HANA Cloud system. Detailed instructions about the scenarios, underlying business processes and how to set up of the SAP S/4HANA Cloud system as well as how to implement the apps can be found in the set-up instruction guides. You'll find a link in the readme files of the individual apps in the branches.
+##### Note:
+All samples require an SAP S/4HANA Cloud system. Detailed instructions about the scenarios, underlying business processes and how to set up of the SAP S/4HANA Cloud system as well as how to implement the apps can be found in the set-up instruction guides. You'll find a link in the readme files of the individual apps in the branches (or [here](https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER).
 Since most of the samples also show a combination of SAP S/4HANA in-app extensions, several roles are required on the SAP S/4HANA Cloud system.
 
 # Scenario Overview
 
-## External Order Scenario
-This application shows how to reach external users and allow them to list products and place sales orders.
-
-- It uses the SAP S/4HANA Cloud SDK for easier service consumption and integration with S/4HANA
-- It is tightly coupled, and uses a technical user for integration with the S/4HANA system
-- It requires no additional persistency but uses an S/4HANA Custom Business Object to store additional data.
-
-[>> extorderapp](https://github.com/SAP/cloud-s4-sample-ext/tree/extorderapp)
-
-There's also another version of this scenario available using the Spring framework (instead of SAP the S/4HANA Cloud SDK)
-
-[>> extorderapp-spring](https://github.com/SAP/cloud-s4-sample-ext/tree/extorderapp-spring)
-
-## Internal Geographical Sales Report Scenario
-This applications show cases a reporting extension for internal users. It shows a bar graph of sales orders (created with the extorderapp) and shows their origin on a geographical map.
-
-- It uses SAP Fiori to provide the same UI technology than S/4HANA.
-- It uses the SAP S/4HANA Cloud SDK for easier service consumption and integration with S/4HANA
-- It shows how to set-up a shared identity provider between S/4HANA and the sample app running  the SAP Cloud Platform to allow single sign-on.
-
-[>> intreportapp](https://github.com/SAP/cloud-s4-sample-ext/tree/intreportapp)
-
+| Scenario        | Overview           | Link  |
+| ------------- |:-------------:| -----:|
+| External Order Scenario     | This application shows how to reach external users and allow them to list products and place sales orders. <br>There's also another version of this scenario available using the Spring framework (instead of the SAP S/4HANA Cloud SDK)| [>> extorderapp](https://github.com/SAP/cloud-s4-sample-ext/tree/extorderapp)  <br>   [>> extorderapp-spring](https://github.com/SAP/cloud-s4-sample-ext/tree/extorderapp-spring) |
+| Internal Geographical Sales Report Scenario      | This application showcases a reporting extension for internal users. It shows a bar graph of sales orders (created with the extorderapp) and shows their origin on a geographical map.      |   [>> intreportapp](https://github.com/SAP/cloud-s4-sample-ext/tree/intreportapp) |
+| Collaborative Address Validation Using SAP Enterprise Eventing Services      | This application  allows users to receive business events from SAP S/4HANA Cloud on the SAP Cloud Platform. The events will be received whenever a Business Partner was changed in the SAP S/4HANA Cloud System. | [>> addressvalidapp](https://github.com/SAP/cloud-s4-sample-ext/tree/addressvalidapp) |
+| Display Changed Sales Orders Using Business Event Handling      | This application allows users to display the business event objects in the business event queue of SAP S/4HANA Cloud together with the corresponding sales order object.      |   [>> businesseventapp](https://github.com/SAP/cloud-s4-sample-ext/tree/businesseventapp) |
+| Develop a Custom UI and Deploy it to SAP S/4HANA Cloud | This application lists the actual stock movement information (from a custom CDS view) with extended material information (from a custom field). Furthermore, the scenario includes the topic of deploying the custom UI from SAP Cloud Platform to SAP S/4HANA Cloud as well as transporting extensions from a quality to a productive system.      |    [>> deploycustui](https://github.com/SAP/cloud-s4-sample-ext/tree/deploycustui) |
+| Display SAP S/4HANA Cloud Products on an iOS Device      | This native iOS application lists down all the products in the S/4HANA Product Master API and displays detailed product data. | [>> iosmobileproductapp](https://github.com/SAP/cloud-s4-sample-ext/tree/iosmobileproductapp) |
+| Validate Customer Addresses using a Microservice      | This scenario showcases how to consume outbound HTTP services directly in restricted ABAP coding within SAP S/4HANA Cloud. It also shows how the SAP Data Quality Management microservice from SAP Cloud Platform can be used to check and correct address data stored on SAP S/4HANA Cloud.      |   [>> microserviceext](https://github.com/SAP/cloud-s4-sample-ext/tree/microserviceext) |
+| Validate Customer Addresses using a Microservice | This scenario showcases how to consume outbound HTTP services directly in restricted ABAP coding within SAP S/4HANA Cloud. It also shows how the SAP Data Quality Management microservice from SAP Cloud Platform can be used to check and correct address data stored on SAP S/4HANA Cloud.      |    [>> microserviceext](https://github.com/SAP/cloud-s4-sample-ext/tree/microserviceext) |
+| Quick Time Entry for SAP S/4HANA Cloud Time Recording | This application allows users to read and write their working time in a fast and efficient way.|    [>> timesheet-neo](https://github.com/SAP/cloud-s4-sample-ext/tree/timesheet-neo) |
 
 
 
@@ -40,10 +30,9 @@ Note: Sample extension scenarios are designed to help you get an overall underst
 
 
 
-How to obtain support
+How to get support
 ---------------------
-File a message in the [SAP Support Launchpad](https://launchpad.support.sap.com/#/incident/create) under component `CA-GTF-FND`
-
+Create a message in the [SAP Support Launchpad](https://launchpad.support.sap.com/#/incident/create) under component `CA-GTF-FND`
 
 
 
