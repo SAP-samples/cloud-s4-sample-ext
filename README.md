@@ -10,6 +10,10 @@ It allows users to read and write their working time in a fast and efficient way
 >
 > The following README only shows a basic overview
 
+Set-up Instructions Guide
+-------------
+https://help.sap.com/viewer/11a6aeea94214fae9fe26afbdb9291fc/SHIP/en-US
+
 Requirements
 -------------
 1. We assume that you have access to an SAP S/4HANA Cloud system and an SAP Cloud Platform account
