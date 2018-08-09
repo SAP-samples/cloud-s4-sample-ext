@@ -1,7 +1,8 @@
 # SAP S/4HANA Cloud extensions - Sample scenarios
 
 The sample scenarios/applications in this repository showcase various (side-by-side) extension scenarios to an SAP S/4HANA Cloud system. **Please check out the branches of the repository for the diverse sample apps.**
-Side-by-side applications are standalone web-based applications, running on the SAP Cloud Platform. Find an overview and more info on [SAP Extensibility Explorer for SAP S/4HANA Cloud](https://www.sap.com/extends4).
+Side-by-side applications are standalone web-based applications, running on the SAP Cloud Platform. Find an overview and more info on
+#### [SAP Extensibility Explorer for SAP S/4HANA Cloud](https://www.sap.com/extends4).
 
 ##### Note:
 All samples require an SAP S/4HANA Cloud system. Detailed instructions about the scenarios, underlying business processes and how to set up of the SAP S/4HANA Cloud system as well as how to implement the apps can be found in the set-up instruction guides. You'll find a link in the readme files of the individual apps in the branches (or [here](https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER).
