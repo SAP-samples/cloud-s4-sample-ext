@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
+	<Dialog id="SignatureFragment" title="Signature">
+		<content>
+			<VBox width="100%">
+				<VBox>
+					<core:HTML id="htmlFragment"></core:HTML>
+					<!--id="htmlFragment"-->
+				</VBox>
+			</VBox>
+		</content>
+		<buttons>
+			<Button text="Sign" press="onSign"></Button>
+			<Button text="Clear" press="clearButton"></Button>
+			<Button text="Print to PDF" press="saveButton"></Button>
+			<Button type="Reject" text="Cancel" press="onCloseDialog"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

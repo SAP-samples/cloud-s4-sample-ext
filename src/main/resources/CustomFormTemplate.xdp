@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-05-25T07:36:26Z" uuid="01301859-4e6e-42f1-84d3-15d97ff81678">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="TimesheetData" layout="tb" locale="de_DE" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="13.575mm" y="14.24mm" w="183.15mm" h="271.281mm"/>
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb">
+         <subform w="196.85mm" h="58.836mm" name="TimesheetHeaderInf">
+            <bind match="none"/>
+            <subform y="0mm" w="183.149mm" h="58.841mm">
+               <bind match="none"/>
+               <draw w="1.5in" h="1.5in" y="0mm">
+                  <value>
+                     <image contentType="image/png">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</image>
+                  </value>
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <desc>
+                     <text name="embeddedHref">.\SAP_scrn_R.png</text>
+                  </desc>
+               </draw>
+               <draw name="Text1" y="1.635mm" x="56.149mm" w="127mm" h="12.7mm" hAlign="right">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="0AC50808-89DA-478C-BF8A-3203CA3D5CC4">Time Recording - Customer Confirmation</text>
+                  </value>
+                  <font size="18pt" typeface="Arial" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <?renderCache.bounds 357166 33166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 38 Time Recording - Customer Confirmation 0 1417 15629 0 0 0 "Arial" 1 0 18000 ISO-8859-1?></draw>
+               <field name="EmployeeName" x="119.775mm" w="63.374mm" h="6.35mm" y="17.51mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="27.944mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="A0814ACA-7997-4077-87FE-3A9900D00C44">Employee No.:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.Employee.PersonWorkAgreement"/>
+               </field>
+               <field name="TextField2" y="23.86mm" x="119.775mm" w="63.5mm" minH="6.35mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="28.1059mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="6334A9EC-134E-401B-BEEB-B66917F49F54">Employee Name:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.Employee.BusinessPartnerFullName"/>
+               </field>
+               <draw name="Text2" y="49.26mm" w="177.8mm" h="8.761mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="69AE8F29-042F-43DC-8F8C-25652DA826FA">The customer confirms the work has been performed by the above named service agent.</text>
+                  </value>
+                  <font typeface="Arial"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <?renderCache.bounds 501166 22000 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 83 The customer confirms the work has been performed by the above named service agent. 0 1417 9313 0 0 0 "Arial" 0 0 10000 ISO-8859-1?></draw>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <subform w="197.725mm" name="TimeRecordings" layout="tb">
+            <subform layout="tb">
+               <subform name="TimeRecordingData" layout="table" columnWidths="25.638mm 28.133mm 28.133mm 28.133mm 27.447mm 24.729mm 20.647mm">
+                  <border>
+                     <edge/>
+                  </border>
+                  <subform layout="row" name="HeaderRow" id="HeaderRow_ID">
+                     <assist role="TH"/>
+                     <draw h="5.707mm" name="Cell1">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="14310959-BB8C-4984-B8E1-E9A48CE14E0F">Customer</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <draw h="5.707mm" name="Cell2">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="C506B9E2-7BDD-438D-A015-3B3F4B598F7A">Project</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <draw h="5.707mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="945A5ECE-1E8C-4AE6-9FB1-1909749B64F1">Work Package</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                     </draw>
+                     <draw h="5.707mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="F2A29A4C-78C9-4827-9E0F-123392526328">Work Item</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                     </draw>
+                     <draw h="5.707mm">
+                        <value>
+                           <text xliff:rid="BE57F344-2236-45D7-9CF7-F28D96D0C926">Notes</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <para vAlign="middle" hAlign="center"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                     </draw>
+                     <draw h="5.707mm" name="Cell3">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="FB1E512F-AE5C-4DB3-A061-EAE4AB570B27">Date</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <draw h="5.707mm" name="Cell4">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="BECBCA69-A0CE-412B-AA0F-2318DC1D89A0">Hours</text>
+                        </value>
+                        <font typeface="Arial" size="9pt" weight="bold"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="row" name="Row1">
+                     <assist role="TR"/>
+                     <field name="CustomerName" access="readOnly" minH="20.1328mm">
+                        <ui>
+                           <textEdit multiLine="1"/>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].CustomerFullName"/>
+                     </field>
+                     <field name="ProjectDescription" w="37.052mm" access="readOnly" minH="6.8356mm">
+                        <ui>
+                           <textEdit multiLine="1" hScrollPolicy="off" vScrollPolicy="off">
+                              <border presence="hidden"/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].EngagementProjectName"/>
+                     </field>
+                     <field w="37.052mm" minH="6.8356mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].WorkPackageName"/>
+                     </field>
+                     <field w="37.052mm" minH="6.8356mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].WorkItemName"/>
+                     </field>
+                     <field minH="20.133mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].TimesheetNote"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <font typeface="Arial" size="8pt"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                     </field>
+                     <field name="Date" h="20.1331mm" access="readOnly">
+                        <ui>
+                           <dateTimeEdit/>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <value>
+                           <date/>
+                        </value>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].TimeSheetDate"/>
+                     </field>
+                     <field name="Hours" h="20.1331mm" access="readOnly">
+                        <ui>
+                           <numericEdit/>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.Timesheets.TimesheetTable.Timesheet[*].RecordedHours"/>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="240,240,240"/>
+                        </fill>
+                     </border>
+                     <occur max="-1"/>
+                     <event activity="indexChange" name="event__indexChange">
+                        <script contentType="application/x-javascript" runAt="both">//{{Adobe LiveCycle Designer Generated Code Begin}} - row shading script. Don't modify it!
+var Freqs=[1,1];
+var Colors=["240,240,240","255,255,255"];
+var nFreqSize = 0;
+for (var i=0; i&lt;Freqs.length; i++)
+  nFreqSize += Freqs[i];
+var nRelIndex = this.index % nFreqSize + 1;
+for (var nRun=0; nRun&lt;Freqs.length; nRun++)
+{
+   if (nRelIndex&gt;Freqs[nRun])
+   {
+        nRelIndex -= Freqs[nRun];
+   }
+   else
+   {
+      this.border.fill.color.value = Colors[nRun];
+      break;
+   }
+}
+//{{Adobe LiveCycle Designer Generated Code End}} - row shading script.
+</script>
+                     </event>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:1?>
+                     <bind match="none"/>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:1?>
+                  <bind match="none"/>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <subform y="32.6mm" w="183.275mm" minH="9mm" layout="tb">
+               <bind match="none"/>
+               <keep intact="contentArea"/>
+               <field name="TotalHours" hAlign="right" w="40.537mm" h="9mm">
+                  <ui>
+                     <numericEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin topInset="1mm" bottomInset="1.524mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="25.8607mm">
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <value>
+                        <text xliff:rid="175DE85B-7ABB-41FD-AE71-E5BCAA2C67BD">Total Hours:</text>
+                     </value>
+                     <font typeface="Arial" size="9pt" weight="bold" baselineShift="0pt"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.Employee.TotalRecordedHours"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform w="196.85mm" minH="50.8mm" layout="tb">
+               <subform w="183.275mm" h="33.06mm">
+                  <bind match="none"/>
+                  <keep intact="none"/>
+                  <field name="Signature" w="76.074mm" h="15.875mm" x="107.075mm" y="7.66mm" hAlign="right">
+                     <ui>
+                        <imageEdit data="embed"/>
+                     </ui>
+                     <value>
+                        <image contentType="application/octet-stream"/>
+                     </value>
+                     <desc>
+                        <text name="embeddedHref">Unknown Embedded URI</text>
+                     </desc>
+                     <margin topInset="0mm"/>
+                     <bind match="dataRef" ref="$.Signature.Signature"/>
+                     <caption reserve="24.552mm">
+                        <value>
+                           <text xliff:rid="679C581E-A652-40B9-A58D-3E9990E6EA6F">Signature</text>
+                        </value>
+                        <font typeface="Arial"/>
+                        <para vAlign="middle"/>
+                     </caption>
+                  </field>
+                  <field name="SignatureDate" y="23.535mm" x="106.949mm" w="76.2mm" h="9mm" access="readOnly">
+                     <ui>
+                        <dateTimeEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="23.704mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="FCF0BB37-D940-470B-9FA4-3999A7B962DE">Signed on</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$.SignedOn.Date"/>
+                     <value>
+                        <date/>
+                     </value>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <bind match="none"/>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 144 36 00030011001D002600270028002B002C0031003300360037003A004400450046004700480049004A004B004C004D004E004F005000510052005300550056005700580059005A005C .:CDEHINPSTWabcdefghijklmnoprstuvwy?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 116 29 00030010001D00260027002B002C0031003300350037003A00440046004700480049004A004C004D004E004F0050005100520055005600570058 -:CDHINPRTWacdefgijklmnorstu?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType print?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultPreviewDataFileName .\GeneratedFormData.xml?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 116?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="de_DE" desc="German (Germany)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Januar</month>
+            <month>Februar</month>
+            <month>März</month>
+            <month>April</month>
+            <month>Mai</month>
+            <month>Juni</month>
+            <month>Juli</month>
+            <month>August</month>
+            <month>September</month>
+            <month>Oktober</month>
+            <month>November</month>
+            <month>Dezember</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mrz</month>
+            <month>Apr</month>
+            <month>Mai</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Okt</month>
+            <month>Nov</month>
+            <month>Dez</month>
+         </monthNames>
+         <dayNames>
+            <day>Sonntag</day>
+            <day>Montag</day>
+            <day>Dienstag</day>
+            <day>Mittwoch</day>
+            <day>Donnerstag</day>
+            <day>Freitag</day>
+            <day>Samstag</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>So</day>
+            <day>Mo</day>
+            <day>Di</day>
+            <day>Mi</day>
+            <day>Do</day>
+            <day>Fr</day>
+            <day>Sa</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>vorm.</meridiem>
+            <meridiem>nachm.</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>v. Chr.</era>
+            <era>n. Chr.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D. MMMM YYYY</datePattern>
+         <datePattern name="long">D. MMMM YYYY</datePattern>
+         <datePattern name="med">DD.MM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">H:MM' Uhr 'Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GjMtkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">z,zz9.99 $</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">€</currencySymbol>
+         <currencySymbol name="isoname">EUR</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2018-05-25T07:36:26Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:01301859-4e6e-42f1-84d3-15d97ff81678</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="TimesheetData">
+      <TimesheetData>
+         <Employee>
+            <BusinessPartnerFullName/>
+            <TotalRecordedHours/>
+            <PersonWorkAgreement/>
+         </Employee>
+         <Timesheets>
+            <TimesheetTable>
+               <Timesheet dd:maxOccur="-1">
+                  <CustomerFullName/>
+                  <EngagementProjectName/>
+                  <TimeSheetDate/>
+                  <TimesheetNote/>
+                  <RecordedHours/>
+                  <WBSDescription/>
+                  <WorkItemName/>
+                  <WorkPackageID/>
+                  <WorkPackageName/>
+               </Timesheet>
+            </TimesheetTable>
+         </Timesheets>
+         <Signature>
+            <Signature/>
+         </Signature>
+         <SignedOn>
+            <Date/>
+         </SignedOn>
+      </TimesheetData>
+   </dd:dataDescription>
+</xfa:datasets>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xmlConnection name="DataConnection" dataDescription="TimesheetData">
+      <uri>.\GeneratedFormData.xml</uri>
+      <?templateDesigner fileDigest shaHash="r6iNr+WOvXxS3O/5o7CupDKj37w="?></xmlConnection>
+</connectionSet></xdp:xdp>

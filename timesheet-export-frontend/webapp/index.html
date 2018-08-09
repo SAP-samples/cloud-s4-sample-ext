@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+		 
+        <title>Timesheet Export - From Scratch</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.core"
+			data-sap-ui-theme="sap_belize"
+            data-sap-ui-supportedLanguages="en"
+            data-sap-ui-bindingSyntax="complex"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async"
+			data-sap-ui-resourceroots='{"com.sap.build.standard.timesheetExportFromScratch":""}'>
+		</script>
+
+		<script type="text/javascript">
+			sap.ui.getCore().attachInit(function() {
+        		  	new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						name: "com.sap.build.standard.timesheetExportFromScratch"
+					})
+				}).placeAt("content");
+			});
+        </script>
+        
+	</head>
+	<body class="sapUiBody" id="content" rootUiArea >
+	</body>
+
+</html>

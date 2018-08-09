@@ -1,0 +1,24 @@
+s4destination:
+  name: S4HANA_CLOUD
+  path: /sap/opu/odata/sap/API_MANAGE_WORKFORCE_TIMESHEET
+destination:
+  name: P23_S4SYSTEM
+  basePath: /sap/opu/odata/sap/
+auth:
+  tokenEndpoint: https://your-url.com/oauth2/api/v1/token
+  clientId: client
+  clientSecret: secret
+  grantType: client_credentials
+  scope:  generate-ads-output
+adobe:
+  url: https://your-url.com
+server:
+  port: 8081
+cds:
+  name: YY1_TIMESHEETEXP_UTILREPOR_CDS
+  entity: YY1_TimesheetExp_UtilRepor
+---
+spring:
+  profiles: test
+logging:
+  level.org.springframework.web:  info

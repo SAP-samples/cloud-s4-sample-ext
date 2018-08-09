@@ -1,0 +1,149 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.timesheetExportFromScratch.controller.Page1" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:fb="sap.ui.comp.filterbar" xmlns:vm="sap.ui.comp.variants">
+	<f:DynamicPage id="dynamicPageId" headerExpanded="true" showFooter="true">
+		<!-- DynamicPage Title -->
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<vm:VariantManagement standardItemText="Standard" enabled="true"></vm:VariantManagement>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+		<!-- DynamicPage Header -->
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					<fb:FilterBar reset="onReset" search="readBackendData" useToolbar="false" showGoOnFB="true">
+						<fb:filterItems>
+							<fb:FilterItem name="A" label="Project">
+								<fb:control>
+									<Input id="productInputA" type="Text" placeholder="" showSuggestion="true" showValueHelp="true" valueHelpRequest="handleValueHelp"
+										width="500px"></Input>
+								</fb:control>
+							</fb:FilterItem>
+							<fb:FilterItem name="B" label="Customer">
+								<fb:control>
+									<Input id="productInputB" type="Text" placeholder="" showSuggestion="true" showValueHelp="true" valueHelpRequest="handleValueHelp2"
+										width="500px"></Input>
+								</fb:control>
+							</fb:FilterItem>
+							<fb:FilterItem name="D" label="Work Package">
+								<fb:control>
+									<Input id="productInputD" type="Text" placeholder="" showSuggestion="true" showValueHelp="true" valueHelpRequest="handleValueHelp3"
+										width="500px"></Input>
+								</fb:control>
+							</fb:FilterItem>
+							<fb:FilterItem name="C" label="Date">
+								<fb:control>
+									<DateRangeSelection enabled="true" visible="true" width="250px" displayFormat="MMM dd, yyyy" change="handlerDateRangeSelection" id="dRange"
+										navigate="onNavigate"/>
+								</fb:control>
+							</fb:FilterItem>
+						</fb:filterItems>
+					</fb:FilterBar>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<!-- DynamicPage Content -->
+		<f:content>
+			<Table id="mainTable" width="100%" noDataText="No data" mode="MultiSelect" showSeparators="All" growing="true" growingThreshold="20"
+				growingScrollToLoad="true" items="{path:'/days', templateShareable:true}">
+				<headerToolbar>
+					<Toolbar width="auto" height="46px" design="Transparent" visible="true" enabled="true">
+						<content>
+							<Title text="Recorded Times" titleStyle="Auto" width="auto" textAlign="Begin" visible="true"/>
+							<!--	<ToolbarSpacer width=""/>-->
+							<!--	<Button text="" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true"-->
+							<!--		iconDensityAware="false" press="_onButtonPress"/>-->
+							<!--	<Button text="" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true"-->
+							<!--		iconDensityAware="false" press="_onButtonPress1"/>-->
+							<!--	<Button text="" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true"-->
+							<!--		iconDensityAware="false" press="_onButtonPress2"/>-->
+							<!--	<Button text="" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true"-->
+							<!--		iconDensityAware="false"/>-->
+						</content>
+						<tooltip/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Customer" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Project" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Work Package" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Work Item" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Timesheet Note" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+					<!--<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+					<!--	<header>-->
+					<!--		<Text text="WBS" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>-->
+					<!--	</header>-->
+					<!--	<footer/>-->
+					<!--</Column>-->
+					<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Recorded Hours" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</header>
+						<footer/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+							<Input value="{path: 'calendarDate' , formatter: '.dateFormatter'}" editable="false" visible="true" width="auto"/>
+							<ObjectIdentifier title="{customer}" text="{customerFullName}" titleActive="false" visible="true"/>
+							<ObjectIdentifier title="" text="{engagementProjectName}" titleActive="false" visible="true"/>
+							<ObjectIdentifier title="{workPackage}" text="{workPackageName}" titleActive="false" visible="true"/>
+							<!--<ObjectNumber number="{path: 'extProjHours', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"-->
+							<!--	unit="{hoursUnitOfMeasure}" emphasized="true" state="None" textAlign="Center"/>-->
+							<!--<ObjectNumber number="{path: 'intProjHours', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"-->
+							<!--	unit="{hoursUnitOfMeasure}" emphasized="true" state="None" textAlign="Center"/>-->
+							<ObjectIdentifier title="{workItem}" text="{workItemName}" titleActive="false" visible="true"/>
+							<ObjectIdentifier title="" text="{timeSheetNote}" titleActive="false" visible="true"/>
+							<!--<ObjectIdentifier title="" text="{wbsDescription}" titleActive="false" visible="true"/>-->
+							<ObjectNumber number="{path: 'recordedHours', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+								unit="{hoursUnitOfMeasure}" emphasized="true" state="None" textAlign="Center"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>
+		<!-- DynamicPage Footer -->
+		<f:footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Default" press="onDialogWithSizePress" id="btnOpenDialog" text="Capt. Signature and Print to PDF"/>
+				<Button type="Default" press="printPDF" text="Print PDF"/>
+				<Button type="Default" press="exportToExcel" text="Export to Excel"/>
+			</OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>
