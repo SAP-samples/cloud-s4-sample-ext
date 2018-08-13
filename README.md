@@ -21,6 +21,7 @@ Since most of the samples also show a combination of SAP S/4HANA in-app extensio
 | Validate Customer Addresses using a Microservice      | This scenario showcases how to consume outbound HTTP services directly in restricted ABAP coding within SAP S/4HANA Cloud. It also shows how the SAP Data Quality Management microservice from SAP Cloud Platform can be used to check and correct address data stored on SAP S/4HANA Cloud.      |   [>> microserviceext](https://github.com/SAP/cloud-s4-sample-ext/tree/microserviceext) |
 | Quick Time Entry for SAP S/4HANA Cloud Time Recording | This application allows users to read and write their working time in a fast and efficient way.|    [>> timesheet-neo](https://github.com/SAP/cloud-s4-sample-ext/tree/timesheet-neo) |
 | Timesheet Data Export | This is a side-by-side application which allows you to read SAP S/4HANA Cloud time-recording data specific to the user that is currently logged on. The time-recording information can be filtered by certain attributes such as customer, project, or work package. Time-recording entries can be exported to Microsoft Excel or printed to a PDF document (optionally along with a signature captured via an SAP UI5 signature pad).|    [>> timesheet-export](https://github.com/SAP/cloud-s4-sample-ext/tree/timesheet-export) |
+| Native iOS Offline Timesheet App | This extensibility scenario showcases the Native iOS Offline Timesheet app, which can be referred to as an alternative – or even an addition – to the standard Manage My Timesheet SAP S/4HANA Cloud time recording app. With this alternative app, your employees can record their working times on their iOS devices. Each recorded task includes start and end times, a recording date, and a task type (predefined with some sample tasks). With the app, you can create, update, or delete working times (internet connection required). Additionally, the app leverages offline capabilities which makes it possible for employees to access their existing timesheet records on their mobiles devices even if there's no internet connection.|    [>> iosmobiletimesheetapp](https://github.com/SAP/cloud-s4-sample-ext/tree/iosmobiletimesheetapp) |
 
 
 
@@ -33,11 +34,12 @@ Note: Sample extension scenarios are designed to help you get an overall underst
 
 How to get support
 ---------------------
-Create a message in the [SAP Support Launchpad](https://launchpad.support.sap.com/#/incident/create) under component `CA-GTF-FND`
+Create a message in the [SAP Support Launchpad](https://launchpad.support.sap.com/#/incident/create) under component `CA-GTF-FND-EXT`
 
 
 
-### Copyright and License
+Copyright and License
+---------------------
 
 Copyright (c) 2018 SAP SE or an SAP affiliate company. All rights reserved.
 This file is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](LICENSE) file
