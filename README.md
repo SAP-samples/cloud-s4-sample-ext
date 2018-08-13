@@ -5,8 +5,11 @@ Side-by-side applications are standalone web-based applications, running on the 
 #### [SAP Extensibility Explorer for SAP S/4HANA Cloud](https://www.sap.com/extends4).
 
 ##### Note:
-All samples require an SAP S/4HANA Cloud system. Detailed instructions about the scenarios, underlying business processes and how to set up of the SAP S/4HANA Cloud system as well as how to implement the apps can be found in the set-up instruction guides. You'll find a link in the readme files of the individual apps in the branches (or [here](https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER).
+All samples require an SAP S/4HANA Cloud system. Detailed instructions about the scenarios, underlying business processes and how to set up of the SAP S/4HANA Cloud system as well as how to implement the apps can be found in the set-up instruction guides. You'll find a link in the readme files of the individual apps in the branches or [here](https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER).
 Since most of the samples also show a combination of SAP S/4HANA in-app extensions, several roles are required on the SAP S/4HANA Cloud system.
+
+# Set-up Instruction Guides
+https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER
 
 # Scenario Overview
 
