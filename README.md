@@ -1,33 +1,6 @@
-# SAP S/4HANA Cloud extensions - Sample scenarios
+# SAP S/4HANA Cloud Extensions - Sample Scenarios Support
 
-The sample scenarios/applications in this repository showcase various (side-by-side) extension scenarios to an SAP S/4HANA Cloud system. **Please check out the branches of the repository for the diverse sample apps.**
-Side-by-side applications are standalone web-based applications, running on the SAP Cloud Platform. Find an overview and more info on
-#### [SAP Extensibility Explorer for SAP S/4HANA Cloud](https://www.sap.com/extends4).
-
-##### Note:
-All samples require an SAP S/4HANA Cloud system. Detailed instructions about the scenarios, underlying business processes and how to set up of the SAP S/4HANA Cloud system as well as how to implement the apps can be found in the set-up instruction guides. You'll find a link in the readme files of the individual apps in the branches or [here](https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER).
-Since most of the samples also show a combination of SAP S/4HANA in-app extensions, several roles are required on the SAP S/4HANA Cloud system.
-
-# Set-up Instruction Guides
-https://help.sap.com/viewer/p/SAP_EXTENSIBILITY_EXPLORER
-
-# Scenario Overview
-
-| Scenario        | Overview           | Link  |
-| ------------- |:-------------:| -----:|
-| External Order Scenario | This application shows how to reach external users and allow them to list products and place sales orders. <br> There are two versions available. One is using the SAP S/4HANA Cloud SDK which helps you to connect to S/4HANA and provides the public APIs directly in JAVA (extorderapp). The other version shows the manual approach not using the SAP S/4HANA Cloud SDK (extorderapp-spring).| [>> extorderapp](https://github.com/SAP/cloud-s4-sample-ext/tree/extorderapp)  <br>   [>> extorderapp-spring](https://github.com/SAP/cloud-s4-sample-ext/tree/extorderapp-spring) |
-| Internal Geographical Sales Report Scenario      | This application showcases a reporting extension for internal users. It shows a bar graph of sales orders (created with the extorderapp) and shows their origin on a geographical map.      |   [>> intreportapp](https://github.com/SAP/cloud-s4-sample-ext/tree/intreportapp) |
-| Collaborative Address Validation Using SAP Enterprise Eventing Services      | This application  allows users to receive business events from SAP S/4HANA Cloud on the SAP Cloud Platform. The events will be received whenever a Business Partner was changed in the SAP S/4HANA Cloud System. | [>> addressvalidapp](https://github.com/SAP/cloud-s4-sample-ext/tree/addressvalidapp) |
-| Display Created or Changed Sales Orders Using Business Event Handling      | This application allows users to display the business event objects in the business event queue of SAP S/4HANA Cloud together with the corresponding sales order object.      |   [>> businesseventapp](https://github.com/SAP/cloud-s4-sample-ext/tree/businesseventapp) |
-| Develop a Custom UI and Deploy it to SAP S/4HANA Cloud | This application lists the actual stock movement information (from a custom CDS view) with extended material information (from a custom field). Furthermore, the scenario includes the topic of deploying the custom UI from SAP Cloud Platform to SAP S/4HANA Cloud as well as transporting extensions from a quality to a productive system.      |    [>> deploycustui](https://github.com/SAP/cloud-s4-sample-ext/tree/deploycustui) |
-| Display SAP S/4HANA Cloud Products on an iOS Device      | This native iOS application lists down all the products in the S/4HANA Product Master API and displays detailed product data. | [>> iosmobileproductapp](https://github.com/SAP/cloud-s4-sample-ext/tree/iosmobileproductapp) |
-| Validate Customer Addresses using a Microservice      | This scenario showcases how to consume outbound HTTP services directly in restricted ABAP coding within SAP S/4HANA Cloud. It also shows how the SAP Data Quality Management microservice from SAP Cloud Platform can be used to check and correct address data stored on SAP S/4HANA Cloud.      |   [>> microserviceext](https://github.com/SAP/cloud-s4-sample-ext/tree/microserviceext) |
-| Quick Time Entry for SAP S/4HANA Cloud Time Recording | This application allows users to read and write their working time in a fast and efficient way.|    [>> timesheet-neo](https://github.com/SAP/cloud-s4-sample-ext/tree/timesheet-neo) |
-| Timesheet Data Export | This is a side-by-side application which allows you to read SAP S/4HANA Cloud time-recording data specific to the user that is currently logged on. The time-recording information can be filtered by certain attributes such as customer, project, or work package. Time-recording entries can be exported to Microsoft Excel or printed to a PDF document (optionally along with a signature captured via an SAP UI5 signature pad).|    [>> timesheet-export](https://github.com/SAP/cloud-s4-sample-ext/tree/timesheet-export) |
-| Native iOS Offline Timesheet App | This extensibility scenario showcases the Native iOS Offline Timesheet app, which can be referred to as an alternative – or even an addition – to the standard Manage My Timesheet SAP S/4HANA Cloud time recording app. With this alternative app, your employees can record their working times on their iOS devices. Each recorded task includes start and end times, a recording date, and a task type (predefined with some sample tasks). With the app, you can create, update, or delete working times (internet connection required). Additionally, the app leverages offline capabilities which makes it possible for employees to access their existing timesheet records on their mobiles devices even if there's no internet connection.|    [>> iosmobiletimesheetapp](https://github.com/SAP/cloud-s4-sample-ext/tree/iosmobiletimesheetapp) |
-| Change Payment Information via Approval Workflow | Payment information of business partners is used for automated payment runs at the end of each month. Since payouts are fully automated, they could be vulnerable to fraud by changing a business partner’s bank information to a different bank account. In this workflow application, the four-eyes principle is applied in the approval process for every payment data change to prevent any misuse.|    [>> approvepaymentdata](https://github.com/SAP/cloud-s4-sample-ext/tree/approvepaymentdata) |
-| Set Up Authentication for SAP S/4HANA Cloud Extensions | This scenario showcases how you can configure the connectivity from your SAP Cloud Platform NEO account to your SAP S/4HANA Cloud tenant when setting up side-by-side extensibility applications. Simple Java and SAPUI5 applications are used as an example that you can implement in your own landscape to check how you can use these different authentication types.|    [>> authentication](https://github.com/SAP/cloud-s4-sample-ext/tree/authentication) |
-| Migrated Sales Order Data| This scenario showcases a simple sales order UI app that displays historical data of sales orders and other documents that have been migrated from a legacy system to another database system. This app allows you to perform search, filter, and sort operations on the data. Additionally, you can export the data to a Microsoft Excel file. A user with the admin role can also import historical sales order data using the import functionality.|    [>> migratehistoricaldata](https://github.com/SAP/cloud-s4-sample-ext/tree/migratehistoricaldata) |
+The repository hosts _issues_ for SAP S/4HANA Extensibility Scenarios from [SAP Extensibility Explorer](https://www.sap.com/extends4). For more information on particular samples including detailed descriptions, source codes and setup guides, please refer to the [samples list page](http://tiny.cc/s4-ext-samples) or follow the links in the table below.
 
 
 
@@ -39,14 +12,32 @@ Note: Sample extension scenarios are designed to help you get an overall underst
 
 How to get support
 ---------------------
-Create a ticket via the [SAP Support Launchpad](https://launchpad.support.sap.com/#/incident/create) under component `CA-GTF-FND-EXT`
+Please first search in known issues before creating a new issue.
+
+| Scenario        | ✔️  | ❓  |
+| ------------- | ----- | ---- |
+[Adapt Cloud Samples for Use in an SAP S/4HANA System On Premise](http://tiny.cc/s4-ext-on-premise)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-ext-on-premise) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-ext-on-premise&template=s4-ext-on-premise.md)
+[Add the Project ID to the Email Template Header](http://tiny.cc/s4-email-templ-header)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-email-templ-header) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-email-templ-header&template=s4-email-templ-header.md)
+[Allow Exceptional Editing of Time Records After Approval](http://tiny.cc/s4-except-edit-time-recs)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-except-edit-time-recs) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-except-edit-time-recs&template=s4-except-edit-time-recs.md)
+[Analyze Projects for Unplanned Hours](http://tiny.cc/s4-analyze-unpl-hours)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-analyze-unpl-hours) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-analyze-unpl-hours&template=s4-analyze-unpl-hours.md)
+[Combined Reporting for Professional Services and Sales Orders](http://tiny.cc/s4-report-profservice)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-report-profservice) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-report-profservice&template=s4-report-profservice.md)
+[Custom Fields Mapping Implementation for the EDI Integration Process](http://tiny.cc/s4-edi-integration)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-edi-integration) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-edi-integration&template=s4-edi-integration.md)
+[Custom Logic Samples](http://tiny.cc/s4-cust-logic)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-cust-logic) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-cust-logic&template=s4-cust-logic.md)
+[Customer Project Planning and Assignment](http://tiny.cc/s4-cust-proj-plan)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-cust-proj-plan) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-cust-proj-plan&template=s4-cust-proj-plan.md)
+[Enable Custom Fields in the Purchasing Process](http://tiny.cc/s4-enable-custfields-purc)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-enable-custfields-purc) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-enable-custfields-purc&template=s4-enable-custfields-purc.md)
+[In-App Sample for Reusable Elements](http://tiny.cc/s4-reusable-elements)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-reusable-elements) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-reusable-elements&template=s4-reusable-elements.md)
+[Report on General Ledger Account Line Item with Project Reference](http://tiny.cc/s4-report-gl-account)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-report-gl-account) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-report-gl-account&template=s4-report-gl-account.md)
+[Workforce Utilization Reporting](http://tiny.cc/s4-workforce-util)	|	[Known issues](https://github.com/SAP/cloud-s4-sample-ext/issues?utf8=âœ“&q=label%3As4-workforce-util) | [New issue](https://github.com/SAP/cloud-s4-sample-ext/issues/new?labels=s4-workforce-util&template=s4-workforce-util.md)
+
+If you cannot find your sample scenario in the list, it may have its own dedicated github repository to host its issues. You can find its github repository in [Extensibility Explorer](http://tiny.cc/s4-ext-samples) on the bottom of the scenario page in the `Key Accelerators` section.
+
 
 
 
 Copyright and License
 ---------------------
 
-Copyright (c) 2018 SAP SE or an SAP affiliate company. All rights reserved.
+Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 This file is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](LICENSE) file
 
 http://www.apache.org/licenses/LICENSE-2.0
