@@ -2,7 +2,7 @@
 name: Analyze Sales Orders with Custom Fields Created in SAP S/4HANA Cloud using SAP Analytics Cloud
 about: http://tiny.cc/s4-analyze-custfields-sac
 title: ''
-labels: s4-analyze-custfields-sac
+labels: s4-analyze-custfields-in-sac
 assignees: ''
 
 ---
