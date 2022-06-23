@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-s4-sample-ext)](https://api.reuse.software/info/github.com/SAP-samples/cloud-s4-sample-ext)
+
 # SAP S/4HANA Cloud Extensions - Sample Scenarios Support
 
 The repository hosts _issues_ for SAP S/4HANA Extensibility Scenarios from [SAP Extensibility Explorer](https://www.sap.com/extends4). For more information on particular samples including detailed descriptions, source codes and setup guides, please refer to the [samples list page](http://tiny.cc/s4-ext-samples) or follow the links in the table below.
